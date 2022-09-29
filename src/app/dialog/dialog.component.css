@@ -1,0 +1,11 @@
+mat-form-field {
+  width: 100%;
+}
+
+.freshness-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
+  gap: 10px;
+}
