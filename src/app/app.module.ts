@@ -17,12 +17,17 @@ import {MatNativeDateModule} from "@angular/material/core";
 import {MatRadioModule} from "@angular/material/radio";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import {MatTableModule} from "@angular/material/table";
+import { ProductTableComponent } from './products/product-table/product-table.component';
+import {MatSortModule} from "@angular/material/sort";
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AddProductDialogComponent,
+    ProductTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,9 +43,12 @@ import {HttpClientModule} from "@angular/common/http";
     MatDatepickerModule,
     MatNativeDateModule,
     MatRadioModule,
+    MatTableModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatSortModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

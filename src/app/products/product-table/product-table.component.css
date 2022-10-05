@@ -1,0 +1,20 @@
+.product-mat-table {
+  overflow: scroll;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+}
+
+td, th {
+  width: calc(100% / 6);
+  min-width: 100px;
+}
+
+.action-cell {
+  min-width: 150px;
+}

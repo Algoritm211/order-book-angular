@@ -46,6 +46,11 @@
     Close
   </button>
   <button mat-raised-button color="primary" (click)="addProduct()">
-    Save
+    <ng-container *ngIf="editData else saveBtn">
+      Update
+    </ng-container>
+    <ng-template #saveBtn>
+      Save
+    </ng-template>
   </button>
 </div>
