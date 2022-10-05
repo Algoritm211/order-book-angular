@@ -5,6 +5,23 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Install json-server with command `npm install -g json-server`
+Also run in separate terminal `json-server --watch db.json` and add to `db.json` this code:
+```json
+{
+  "productList": [
+    {
+      "name": "RR Wraith",
+      "category": "electronics",
+      "date": "2022-10-07T21:00:00.000Z",
+      "freshness": "Brand new",
+      "price": 350000,
+      "comment": "123",
+      "id": 2
+    }
+  ]
+}
+```
 
 ## Code scaffolding
 
