@@ -49,6 +49,17 @@ export class ProductTableComponent implements AfterViewInit {
     })
   }
 
+  deleteProduct(id: number) {
+    this.productService.deleteProduct(id)
+      .subscribe({
+        next: (val) => {
+          alert(`Product was deleted`)
+          this.productService.setRefresh(true);
+        },
+        error: () => alert(`Some error was occurred`)
+      })
+  }
+
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
